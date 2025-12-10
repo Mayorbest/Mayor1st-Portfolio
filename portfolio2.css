@@ -1,0 +1,93 @@
+*{
+  color: white;
+}
+body{
+  background: linear-gradient(30deg, rgb(41, 38, 38)50%, rgb(235, 201, 8) 51%, rgb(46, 43, 43) 100%);
+  margin: 0;
+  background-size: 200% 200%;
+  animation: colorSlide 10s ease infinite;
+}
+@keyframes colorSlide {
+  0% {background-position: 0% 70%;}
+  50% {background-position: 70% 20%;}
+  100% {background-position:0% 90%;}
+}
+.header{
+  display: flex;
+  height: auto;
+  padding: 10px 8px;
+  margin-bottom: 30px;
+}
+.mayorImg{
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 300px;
+  position: relative;
+  min-width: 200px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.mayorImg::before{
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: conic-gradient(blue 0 25%, green 25% 50%, red 50% 75%, violet 75% 100%);
+  animation: borderR 2s linear infinite;
+}
+@keyframes borderR {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+.mayorImg::after{
+  content: url(../images/Mayor-Him.png);
+  position: absolute;
+  inset: 4px;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.myImg{
+  width: inherit;
+  height: 400px;
+}
+.hIntro{
+  padding-right: 60px;
+}
+h1{
+  margin: 0;
+}
+.topI{
+  display: flex;
+}
+.tIcon{
+  width: auto;
+  margin: 0px 8px;
+}
+.nav{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.aiGif{
+  height: 300px;
+  width: 500px;
+  min-width: 200px;
+}
+.content{
+  width: 100%;
+}
+.items{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 5px 12px;
+  margin: 0px 10px;
+}
+.list{
+  height: auto;
+  width: 400px;
+}
